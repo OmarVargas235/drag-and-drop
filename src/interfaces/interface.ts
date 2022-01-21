@@ -1,5 +1,5 @@
 export interface IFolders {
-    name:string,
+    names:string[],
     cont:number,
     extension:string,
 } 

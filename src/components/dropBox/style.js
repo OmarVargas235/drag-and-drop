@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { DARKGRAY } from '../../styles-globals/colors';
+import { DARKGRAY, DARK_GRAY } from '../../styles-globals/colors';
 
 export const Section = styled.section`
     background-color: ${DARKGRAY};
@@ -29,7 +29,7 @@ export const FolderStyle = styled.div`
     }
 
     .body {
-        background-color: darkgray;
+        background-color: ${DARK_GRAY};
         color: white;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DropBox from './components/dropBox';
-import Folders from './components/folders/';
+import SelectFolders from './components/selectFolders';
 import { Div } from './styles-globals/styles';
 import DataFoldersProvider from './context/DataFoldersProvider';
 
@@ -11,7 +11,7 @@ function App(): JSX.Element {
     <DataFoldersProvider>
       <Div>
         <DropBox />
-        <Folders />
+        <SelectFolders />
       </Div>
     </DataFoldersProvider>
   )

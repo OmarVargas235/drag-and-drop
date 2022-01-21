@@ -27,13 +27,16 @@ function DropBox(): JSX.Element {
       if (indexExtension !== -1 && context?.folders) {
 
         const copyFolders:IFolders[] = JSON.parse(JSON.stringify(context?.folders));
+        copyFolders[indexExtension || 0].names.push(name);
         copyFolders[indexExtension || 0].cont += 1;
+
+        context?.selectFolders.length > 0 && context?.setSelectFolders(copyFolders[indexExtension || 0].names);
         
         context?.setFolders(copyFolders);
       }
 
       indexExtension === -1 && arr.push({
-        name,
+        names: [name],
         cont: 1,
         extension,
       });
