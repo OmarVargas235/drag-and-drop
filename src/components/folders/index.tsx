@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
 
 import { DataFoldersContext } from '../../context/DataFoldersProvider';
-import SelectFoldersPage from './SelectFoldersPage';
+import FoldersPage from './FoldersPage';
 
-function SelectFolders(): JSX.Element {
+function Folders(): JSX.Element {
 
   const context = useContext( DataFoldersContext );
 
-  return <SelectFoldersPage
+  return <FoldersPage
     names={context?.selectFolders}
   />;
 }
 
-export default SelectFolders;
+export default Folders;
