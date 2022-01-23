@@ -40,7 +40,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Imagenes del proyecto :flower_playing_cards:
 
 ![image](./demo/img.png)  
-![video](./demo/video.mp4)
+![video](./demo/video.gif)
 
 ### Autor [:octocat:](https://github.com/OmarVargas235)
 
